@@ -1,4 +1,6 @@
-USAGE:
+# USAGE:
+
+the logstash home is on /logstash
 
 ```sh
 docker run -v /logstash.conf:/logstash.conf arypurnomoz/logstash

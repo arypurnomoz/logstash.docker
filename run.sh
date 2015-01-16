@@ -14,8 +14,4 @@ if [ ! -f $CONFIG_FILE ]; then
   fi
 fi
 
-if [ ! -z "$IP" ]; then
-  echo "network.publish_host: ${IP}" > /tmp/elasticsearch.yml
-fi
-
-exec /tmp/logstash/bin/logstash -f $CONFIG_FILE
+exec /logstash/bin/logstash -f $CONFIG_FILE
